@@ -1,0 +1,16 @@
+{
+  "name": "testsfictadvisor",
+  "version": "1.0.0",
+  "description": "Automated softwear testing fictadvisor.com",
+  "main": "index.js",
+  "scripts": {
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
+    "tests:api": "playwright test --config=api.config.ts --project=Chromium"
+  },
+  "author": "Anastasiia Kotielnikova",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.36.2",
+    "prettier": "^3.0.0"
+  }
+}
