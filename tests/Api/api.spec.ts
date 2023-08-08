@@ -1,5 +1,4 @@
 import {test, expect} from '@playwright/test'
-import { dataModelRegistration } from '../../models/dataModelRegister'
 
 test.describe.parallel("API Testing", () => {
     const baseURL = 'https://api.fictadvisor.com'
