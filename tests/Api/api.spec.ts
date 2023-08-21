@@ -51,29 +51,29 @@ test.describe.parallel("API Testing", () => {
             data: {
                 student: {
                     groupId: 'b9c7e47c-6df8-4066-970e-a311cbaaaf11',
-                    firstName: 'Тарас',
+                    firstName: 'Петро',
                     middleName: 'Тарасович',
                     lastName: 'Тарасенко',
                     isCaptain: false
             },
             user: {
                 username: 'taras67',
-                email: 'foltorilma@gufum.com',
+                email: 'tilmilelme@gufum.com',
                 password: 'taras123'
             }
             }
                 })
                 expect(registerResponse.ok()).toBeTruthy();
 
-                const loginResponse = await request.post(`${baseURL}/v2/auth/login`, {
-                            data: {
-                                "username": "taras67",
-                                "password": "taras123",
-                            }
-                        })
-                        const responseBody = JSON.parse(await loginResponse.text())
-                        expect(loginResponse.status()).toBe(201)
-                        expect(responseBody.refreshToken, responseBody.accessToken).toBeTruthy()        
+                // const loginResponse = await request.post(`${baseURL}/v2/auth/login`, {
+                //             data: {
+                //                 "username": "taras67",
+                //                 "password": "taras123",
+                //             }
+                //         })
+                //         const responseBody = JSON.parse(await loginResponse.text())
+                //         expect(loginResponse.status()).toBe(201)
+                //         expect(responseBody.refreshToken, responseBody.accessToken).toBeTruthy()        
     })
 
     test("POST Request - Login", async ({request}) => {

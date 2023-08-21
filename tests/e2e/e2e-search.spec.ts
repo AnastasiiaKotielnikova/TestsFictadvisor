@@ -16,7 +16,7 @@ test.describe("Search for a teacher", () => {
 
         await page.getByPlaceholder('Оберіть викладача').click()
 
-        await page.type('.SearchPage_input__2A9ZZ', 'Полторак')
+        await page.type('.SearchPage_input__2A9ZZ', 'Артем')
         await page.keyboard.press('Enter')
 
        const cardTeacher = await page.locator('ul > a')
