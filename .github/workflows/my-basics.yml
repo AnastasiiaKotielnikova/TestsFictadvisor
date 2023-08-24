@@ -14,12 +14,9 @@ jobs:
           steps: 
           - name: Print Hello Message in Testing
             run: echo "Hello World from Testing Job"
-
-          - name: Execure few commands
-            run: |
-                echo "Hello Message1"
-                echo "Hello Message2"
-                echo "Application name: ${{env.APPLICATION_NAME}}"
+                 echo "Hello Message1"
+                 echo "Hello Message2"
+                 echo "Application name: ${{env.APPLICATION_NAME}}"
 
        my_deploy:
              runs-on: ubuntu-latest
